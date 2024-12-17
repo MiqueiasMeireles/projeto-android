@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "Idroid";
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+
+:root {
+    --cor0: #84E1AD;
+    --cor1: #3dce6b;
+    --cor2: #53bb74;
+    --cor3: #2F6B4A;
+    --cor4: #31573b;
+    --cor5: #193827;
+
+    --font-padrão: Arial, Helvetica, sans-serif;
+    --font-destaque: "Bebas Neue", cursive;
+    --font-idroid: "Idroid", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.imagens {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.bugdroid {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+body {
+    background-color: #ebe5c5;
+    margin: 0%;
+    font-family: var(--font-padrão);
+}
+
+header  {
+    background-image: linear-gradient(to top, var(--cor5), var(--cor2));
+    color: white;
+    text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+}
+
+header  p {
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.123);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav a {
+    color: var(--cor0);
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 5px;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin:auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
+}
+
+
+main h1 {
+    color: var(--cor5);
+    text-align: left;
+    font-family: var(--font-idroid);
+    margin-left: 17px;
+    font-size: 1.8em;
+}
+
+
+main h2 {
+    color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-align: left;
+    font-family: var(--font-idroid);
+    text-indent: 10px;
+    border-radius: 3px;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 2em; /* Espaçamento entre linhas */
+}
+
+strong {
+    color: var(--cor3);
+}
+
+strong a {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    padding: 2px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+strong a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+    transition-duration: 1s;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+}
+
+footer p {
+    margin: 0%;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    background-image: linear-gradient(to right, var(--cor3),transparent);
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--cor5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3 {
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin:  -10px -10px 0px -10px; /* Margens negativas são para expandirem para fora. Faça o teste */
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-position: inside;
+    list-style-type: '✔ ';
+    columns: 2;
+}
+li {
+    text-decoration: underline;
+}
+
+li::marker {
+    color: var(--cor5);
+}
